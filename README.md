@@ -19,3 +19,10 @@ ivankiselev320 microservices repository
 - Создан volume для mongo
 - Создана bridge сеть для контейнеров
 - Контейнеры запущены протетсированы, при удалении контейнеров и запуске повторно данные сохраняются т.к. volume хранит состояние базы
+
+### ДЗ №15
+
+- Изучил и попрактиковался с сетями докера
+- Создан [docker-compose.yml](src/docker-compose.yml) с соблюдением всех условий, контейнеры в корректных сетях, переменные вынесены в [.env](src/.env.example)
+- Так же создан [docker-compose.override.yml](src/docker-compose.override.yml) для запуска в dev режиме
+- Добавил в [README.md](src/README.md) описание как формируется имя проекта
