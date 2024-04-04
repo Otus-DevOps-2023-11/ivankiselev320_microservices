@@ -5,9 +5,9 @@ ivankiselev320 microservices repository
 
 - Установка Docker и зависимостей
 - Протестированы типовые команды Docker
-- Вывод docker images в файл [docker-1.log](docker-monolith/docker-1.log)
+- Вывод docker images в файл [docker-1.log](docker/docker-monolith/docker-1.log)
 - Установлен и настроен docker-machine, протестирована установка и запуска контейнера на удаленном хосте
-- Создан каталог docker-monolith, [Dockerfile](docker-monolith/Dockerfile), [db_config](docker-monolith/db_config), [mongod.conf](docker-monolith/mongod.conf), [start.sh](docker-monolith/start.sh)
+- Создан каталог docker-monolith, [Dockerfile](docker/docker-monolith/Dockerfile), [db_config](docker/docker-monolith/db_config), [mongod.conf](docker/docker-monolith/mongod.conf), [start.sh](docker/docker-monolith/start.sh)
 - Собран контейнер с помощью команды docker build .
 - Зарегистрирован аккаунт в DockerHub, образ загружен и протестирован
 
@@ -23,6 +23,15 @@ ivankiselev320 microservices repository
 ### ДЗ №15
 
 - Изучил и попрактиковался с сетями докера
-- Создан [docker-compose.yml](src/docker-compose.yml) с соблюдением всех условий, контейнеры в корректных сетях, переменные вынесены в [.env](src/.env.example)
-- Так же создан [docker-compose.override.yml](src/docker-compose.override.yml) для запуска в dev режиме
+- Создан [docker-compose.yml](docker/docker-compose.yml) с соблюдением всех условий, контейнеры в корректных сетях, переменные вынесены в [.env](docker/.env.example)
+- Так же создан [docker-compose.override.yml](docker/docker-compose.override.yml) для запуска в dev режиме
 - Добавил в [README.md](src/README.md) описание как формируется имя проекта
+
+### ДЗ №17
+
+- Запустил prometheus и ознакомился с функционалом
+- Собрал свой образ [prometheus](monitoring/prometheus/Dockerfile), добавив в контейнер конфиг [prometheus.yml](monitoring/prometheus/prometheus.yml)
+- Так же добавил сборщик метрик и сам prometheus в [docker-compose.yml](docker/docker-compose.yml), прописал им сети
+- Ознакомился с метриками, провел тестирование 
+- Собранные контейнеры запушены в docker hub https://hub.docker.com/u/ivankiselev320
+
