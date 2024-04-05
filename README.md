@@ -32,6 +32,12 @@ ivankiselev320 microservices repository
 - Запустил prometheus и ознакомился с функционалом
 - Собрал свой образ [prometheus](monitoring/prometheus/Dockerfile), добавив в контейнер конфиг [prometheus.yml](monitoring/prometheus/prometheus.yml)
 - Так же добавил сборщик метрик и сам prometheus в [docker-compose.yml](docker/docker-compose.yml), прописал им сети
-- Ознакомился с метриками, провел тестирование 
+- Ознакомился с метриками, провел тестирование
 - Собранные контейнеры запушены в docker hub https://hub.docker.com/u/ivankiselev320
 
+### ДЗ №18
+
+- Подготовлено окружение для тестирования логирования и трейсинга
+- Созданы [docker-compose-logging.yml](docker/docker-compose-logging.yml), подготовлен контейнер [Dockerfile](logging/fluentd/Dockerfile)
+- Протестирован сбор структурированных и неструктурировнных логов, визуализация логов
+- Добавлен zipkin в [docker-compose-logging.yml](docker/docker-compose-logging.yml) и протестирован
