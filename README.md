@@ -41,3 +41,11 @@ ivankiselev320 microservices repository
 - Созданы [docker-compose-logging.yml](docker/docker-compose-logging.yml), подготовлен контейнер [Dockerfile](logging/fluentd/Dockerfile)
 - Протестирован сбор структурированных и неструктурировнных логов, визуализация логов
 - Добавлен zipkin в [docker-compose-logging.yml](docker/docker-compose-logging.yml) и протестирован
+
+### ДЗ №19
+
+- Установлен и настроен кластер k8s
+- Добавлены ноды ссылкой которую сгенерировал kubectl init
+- Установлен плагин calico
+- Созданы манифесты для запуска контейнеров в кластере: [comment-deployment.yml](kubernetes/reddit/comment-deployment.yml), [mongo-deployment.yml](kubernetes/reddit/mongo-deployment.yml), [post-deployment.yml](kubernetes/reddit/post-deployment.yml), [ui-deployment.yml](kubernetes/reddit/ui-deployment.yml)
+- Поды запущены
