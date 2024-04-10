@@ -49,3 +49,13 @@ ivankiselev320 microservices repository
 - Установлен плагин calico
 - Созданы манифесты для запуска контейнеров в кластере: [comment-deployment.yml](kubernetes/reddit/comment-deployment.yml), [mongo-deployment.yml](kubernetes/reddit/mongo-deployment.yml), [post-deployment.yml](kubernetes/reddit/post-deployment.yml), [ui-deployment.yml](kubernetes/reddit/ui-deployment.yml)
 - Поды запущены
+
+### ДЗ №20
+
+- Установлен и настроен minikube
+- Созданы манифесты приложений [ui-deployment.yml](kubernetes/reddit/ui-deployment.yml), [post-deployment.yml](kubernetes/reddit/post-deployment.yml), [comment-deployment.yml](kubernetes/reddit/comment-deployment.yml), [mongo-deployment.yml](kubernetes/reddit/mongo-deployment.yml)
+- Созданы манифесты сервисов [mongodb-service.yml](kubernetes/reddit/mongodb-service.yml), [post-service.yml](kubernetes/reddit/post-service.yml), [ui-service.yml](kubernetes/reddit/ui-service.yml), [post-mongodb-service.yml](kubernetes/reddit/post-mongodb-service.yml), [comment-mongodb-service.yml](kubernetes/reddit/comment-mongodb-service.yml)
+- Создан namespace dev [dev-namespace.yml](kubernetes/reddit/dev-namespace.yml)
+- Все запущено локально, протестировано
+- Поднят managed cluster yandex cloud, добавлены рабочие узлы
+- Создан dev namespace и задеплоены все компоненты 
