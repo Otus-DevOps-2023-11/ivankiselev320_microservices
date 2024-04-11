@@ -59,3 +59,7 @@ ivankiselev320 microservices repository
 - Все запущено локально, протестировано
 - Поднят managed cluster yandex cloud, добавлены рабочие узлы
 - Создан dev namespace и задеплоены все компоненты 
+
+### ДЗ №21
+
+- 1
