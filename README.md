@@ -62,4 +62,10 @@ ivankiselev320 microservices repository
 
 ### ДЗ №21
 
-- 1
+- Настроен loadbalancer
+- Установлен [ingress](kubernetes/deploy.yml)
+- Создан [ui-ingress.yml](kubernetes/reddit/ui-ingress.yml) в котором описан ingress для ui
+- Создан ключ и добавлен в kubernetes
+- Создан [mongo-network-policy.yml](kubernetes/reddit/mongo-network-policy.yml) для ограничения доступов подам
+- Создан [mongo-claim.yml](kubernetes/reddit/mongo-claim.yml) для запроса на дисковое пространство
+- Отредактирован [mongo-deployment.yml](kubernetes/reddit/mongo-deployment.yml) для использования внешнего хранилища
