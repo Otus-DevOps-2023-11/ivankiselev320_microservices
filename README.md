@@ -59,3 +59,13 @@ ivankiselev320 microservices repository
 - Все запущено локально, протестировано
 - Поднят managed cluster yandex cloud, добавлены рабочие узлы
 - Создан dev namespace и задеплоены все компоненты 
+
+### ДЗ №21
+
+- Настроен loadbalancer
+- Установлен [ingress](kubernetes/deploy.yml)
+- Создан [ui-ingress.yml](kubernetes/reddit/ui-ingress.yml) в котором описан ingress для ui
+- Создан ключ и добавлен в kubernetes
+- Создан [mongo-network-policy.yml](kubernetes/reddit/mongo-network-policy.yml) для ограничения доступов подам
+- Создан [mongo-claim.yml](kubernetes/reddit/mongo-claim.yml) для запроса на дисковое пространство
+- Отредактирован [mongo-deployment.yml](kubernetes/reddit/mongo-deployment.yml) для использования внешнего хранилища

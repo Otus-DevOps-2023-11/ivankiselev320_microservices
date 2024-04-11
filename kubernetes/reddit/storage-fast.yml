@@ -1,0 +1,6 @@
+---
+- name: Create disk
+  hosts: localhost
+  tasks:
+    - name: create disk
+      command: yc compute disk create --name k8s --size 4 --zone ru-central1-a --description "disk for k8s"
